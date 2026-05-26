@@ -217,7 +217,7 @@
 </main>
 
 <script>
-  const POWER_APP_URL = "https://apps.powerapps.com/play/e/default-ec445a2a-b5ba-46f6-bead-4595e9fbd4a2/a/d5c29fdc-a19f-4c72-bca6-beedccee8d8c?tenantId=ec445a2a-b5ba-46f6-bead-4595e9fbd4a2&hint=0ab7a361-ee6b-4646-9cbf-889f813f2b6b&sourcetime=1779762545109";
+  const POWER_APP_URL = "https://apps.powerapps.com/play/e/default-ec445a2a-b5ba-46f6-bead-4595e9fbd4a2/a/d5c29fdc-a19f-4c72-bca6-beedccee8d8c?tenantId=ec445a2a-b5ba-46f6-bead-4595e9fbd4a2";
 
   let scannedValue = null;
   let html5QrCode = null;
@@ -295,7 +295,7 @@
     if (!scannedValue) return;
     const url = POWER_APP_URL + '&barcode=' + encodeURIComponent(scannedValue);
     window.location.href = url;
-  }
+}
 
   function manualSearch() {
     const val = document.getElementById('manualInput').value.trim();
